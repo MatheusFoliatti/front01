@@ -26,7 +26,7 @@ export const App = () => {
 		<>
 			<Box>
 				<PStyle>Hello World</PStyle>
-				<PStyle>{txt}</PStyle>
+				<p>{txt}</p>
 			</Box>
 		</>
 	);
