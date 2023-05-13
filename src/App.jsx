@@ -2,7 +2,7 @@ import "./App.css";
 import axios from "axios";
 
 import { Box } from "./App.style";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const App = () => {
 	const [person, setPerson] = useState({
@@ -10,6 +10,10 @@ export const App = () => {
 			first: "???",
 		},
 	});
+
+	useEffect(() => {
+		handleGet();
+	}, []);
 
 	//Váriavel não reativa. Não irá renderizar
 	//const PersonNReact = {};
